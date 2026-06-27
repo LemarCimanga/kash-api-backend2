@@ -1,0 +1,42 @@
+# ==================== CORE FRAMEWORK ====================
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-dotenv==1.0.1
+
+# ==================== BASE DE DONNÉES ====================
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1  # Pour les migrations
+psycopg2-binary==2.9.9  # Pour Alembic (optionnel, mais recommandé)
+
+# ==================== SÉCURITÉ ET AUTHENTIFICATION ====================
+passlib==1.7.4
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9  # Pour les formulaires
+email-validator==2.1.1  # Pour valider les emails
+
+# ==================== VALIDATION ET CONFIGURATION ====================
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# ==================== UTILITAIRES ====================
+python-dateutil==2.9.0.post0
+pytz==2024.1
+httpx==0.27.0  # Pour les requêtes HTTP (optionnel)
+
+# ==================== POUR LE DÉVELOPPEMENT ====================
+# (Décommenter pour le développement)
+# pytest==8.2.1
+# pytest-asyncio==0.23.6
+# black==24.4.2
+# flake8==7.0.0
+# mypy==1.10.0
+# pre-commit==3.7.1
+# isort==5.13.2
+
+# ==================== POUR LA PRODUCTION ====================
+# (Décommenter pour la production)
+# gunicorn==22.0.0  # Alternative à uvicorn pour la production
+# sentry-sdk==2.3.1  # Monitoring des erreurs
+# prometheus-client==0.20.0  # Métriques
